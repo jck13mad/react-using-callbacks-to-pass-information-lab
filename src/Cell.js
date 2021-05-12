@@ -8,6 +8,12 @@ export default class Cell extends Component {
       color: this.props.color
     }
   }
+
+  handleCallback = () => {
+    this.setState({
+      color: this.props.drawColor()
+    })
+  }
   
   render() {
     return (
